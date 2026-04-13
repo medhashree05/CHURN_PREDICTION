@@ -15,7 +15,7 @@ features = joblib.load("features.pkl")
 # -----------------------------
 st.set_page_config(page_title="Churn Prediction", layout="centered")
 
-st.title("🍔 Food Delivery Churn Prediction")
+st.title(" Food Delivery Churn Prediction")
 st.write("Predict whether a customer is likely to churn")
 
 # -----------------------------
@@ -31,10 +31,7 @@ risk_score = age / (family_size + 1)
 # -----------------------------
 # CREATE INPUT DATAFRAME
 # -----------------------------
-input_data = pd.DataFrame(columns=features)
-
-# Fill with zeros
-input_data.loc[0] = 0
+input_data = pd.DataFrame(np.zeros((1, len(features))), columns=features)
 
 # Fill actual values
 if "Age" in input_data.columns:
@@ -62,19 +59,19 @@ prob = model.predict_proba(input_scaled)[0][1]
 # -----------------------------
 # OUTPUT
 # -----------------------------
-st.subheader("📊 Prediction Result")
+st.subheader(" Prediction Result")
 
 st.write(f"### Churn Probability: {prob:.2f}")
 
 if prob > 0.5:
-    st.error("⚠️ High Risk Customer")
+    st.error(" High Risk Customer")
 else:
-    st.success("✅ Low Risk Customer")
+    st.success(" Low Risk Customer")
 
 # -----------------------------
 # EXTRA INSIGHT
 # -----------------------------
-st.markdown("### 💡 Insight")
+st.markdown("###  Insight")
 if prob > 0.5:
     st.write("This customer shows high risk of churn. Consider retention strategies.")
 else:
