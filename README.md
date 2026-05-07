@@ -1,12 +1,12 @@
-# 🍔 Food Delivery Customer Churn Prediction
+#  Food Delivery Customer Churn Prediction
 
-## 🚀 Live Demo
+##  Live Demo
 
 🔗 https://medhashree05-churn-prediction-app-9qagw8.streamlit.app/
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project builds a **machine learning-based churn prediction system** for food delivery platforms.
 It identifies customers who are likely to stop ordering and helps businesses take proactive retention actions.
@@ -15,7 +15,7 @@ The model is deployed as an interactive web application using **Streamlit**, ena
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 * Predict whether a customer will churn
 * Identify key factors influencing churn
@@ -23,7 +23,7 @@ The model is deployed as an interactive web application using **Streamlit**, ena
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Python
 * Pandas, NumPy
@@ -33,7 +33,7 @@ The model is deployed as an interactive web application using **Streamlit**, ena
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 * Online Food Delivery Dataset (Kaggle)
 * Includes:
@@ -43,7 +43,7 @@ The model is deployed as an interactive web application using **Streamlit**, ena
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 * Analyzed churn distribution
 * Studied relationships between customer features and churn
@@ -55,7 +55,7 @@ The model is deployed as an interactive web application using **Streamlit**, ena
 
 ---
 
-## 🛠️ Feature Engineering
+##  Feature Engineering
 
 * Created new features:
 
@@ -66,28 +66,28 @@ The model is deployed as an interactive web application using **Streamlit**, ena
 
 ---
 
-## 🤖 Model Building
+##  Model Building
 
 * Logistic Regression (baseline)
 * Random Forest (final model)
 
-### ⚠️ Handling Imbalance
+### Handling Imbalance
 
 * Used `class_weight="balanced"` to improve churn prediction
 
 ---
 
-## 📊 Model Evaluation
+## Model Evaluation
 
 * Accuracy
 * Precision / Recall
 * Confusion Matrix
 
-👉 Focus: **Recall for churn class (important for business impact)**
+ Focus: **Recall for churn class (important for business impact)**
 
 ---
 
-## 🔥 Feature Importance
+##  Feature Importance
 
 * Identified top factors influencing churn:
 
@@ -97,7 +97,7 @@ The model is deployed as an interactive web application using **Streamlit**, ena
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 * Built interactive UI using Streamlit
 * Users can input:
@@ -105,7 +105,7 @@ The model is deployed as an interactive web application using **Streamlit**, ena
   * Age
   * Family size
 
-👉 Output:
+ Output:
 
 * Churn probability
 * Risk level (High / Low)
@@ -114,7 +114,7 @@ Streamlit enables quick deployment of ML apps with minimal frontend effort ([Doc
 
 ---
 
-## 💡 Business Insights
+##  Business Insights
 
 * Low engagement users are more likely to churn
 * Behavioral patterns strongly influence retention
@@ -122,7 +122,7 @@ Streamlit enables quick deployment of ML apps with minimal frontend effort ([Doc
 
 ---
 
-## 🚀 Business Recommendations
+##  Business Recommendations
 
 * Target high-risk users with personalized offers
 * Improve engagement strategies
@@ -130,32 +130,35 @@ Streamlit enables quick deployment of ML apps with minimal frontend effort ([Doc
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 customer-churn-app/
-│
+├── data/
+|    ├── onlinefoods.csv
 ├── app.py
 ├── churn_model.pkl
 ├── scaler.pkl
 ├── features.pkl
+├── main.ipynb
 ├── requirements.txt
+
 ```
 
 ---
 
-## ▶️ How to Run Locally
+##  How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/churn-prediction-app.git
-cd churn-prediction-app
+git clone https://github.com/medhashree05/CHURN_PREDICTION.git
+cd CHRUN_PREDICTION
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 * End-to-end ML pipeline (EDA → Model → Deployment)
 * Handling feature mismatch in production
@@ -164,7 +167,7 @@ streamlit run app.py
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Medha Shree N**
 
